@@ -1,4 +1,4 @@
-export default function index() {
+export default function Menu() {
   return (
     <div>
       <h2>1</h2>
