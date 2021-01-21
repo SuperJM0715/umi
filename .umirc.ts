@@ -15,23 +15,36 @@ export default defineConfig({
     },
     {
       name: '一级菜单一',
-      path: '/',
       routes: [
         {
           name: '二级菜单一',
           path: '/menu',
-          component: './test/menu/index',
+          component: './test/menu',
+        },
+        {
+          name: '二级菜单二',
+          path: '/info',
+          component: './test/infoo/edit',
         },
       ],
     },
     {
       name: '一级菜单二',
-      path: '/',
       routes: [
         {
           name: '二级菜单二',
           path: '/info',
-          component: './test/info/index',
+          component: './test/infoo/edit',
+        },
+      ],
+    },
+    {
+      name: '一级菜单二',
+      routes: [
+        {
+          name: '二级菜单二',
+          path: '/info1',
+          component: './test/infoo/edit',
         },
       ],
     },
