@@ -11,40 +11,44 @@ export default defineConfig({
   routes: [
     {
       path: '/',
-      component: '@/pages/index',
+      component: 'index',
     },
     {
+      path: '/test',
       name: '一级菜单一',
       routes: [
         {
           name: '二级菜单一',
-          path: '/menu',
+          path: '/test/menu',
           component: './test/menu',
         },
         {
-          name: '二级菜单二',
-          path: '/info',
+          name: '二级菜单四',
+          path: '/test/infoo/edit2',
           component: './test/infoo/edit',
         },
       ],
     },
     {
+      path: '/test2',
       name: '一级菜单二',
       routes: [
         {
           name: '二级菜单二',
-          path: '/info',
+          path: 'test/infoo/edit1',
           component: './test/infoo/edit',
+          exact: true,
         },
       ],
     },
     {
-      name: '一级菜单二',
+      path: '/test1',
+      name: '一级菜单三',
       routes: [
         {
-          name: '二级菜单二',
-          path: '/info1',
-          component: './test/infoo/edit',
+          name: '二级菜单三',
+          path: 'test/infoo/edit',
+          component: './test/menu',
         },
       ],
     },
